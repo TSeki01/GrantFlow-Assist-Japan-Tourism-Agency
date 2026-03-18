@@ -1,0 +1,57 @@
+
+> vmfi-subsidy-automator@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.104:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 511ms
+ GET / 200 in 355ms (compile: 195ms, render: 160ms)
+Gemini Chat API Error: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at async POST (app\api\chat\route.ts:45:20)
+  43 |     });
+  44 |     
+> 45 |     const result = await model.generateContent(prompt);
+     |                    ^
+  46 |     const responseText = result.response.text();
+  47 |
+  48 |     return NextResponse.json(JSON.parse(responseText)); {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+ POST /api/chat 500 in 212ms (compile: 48ms, render: 164ms)
+Gemini Chat API Error: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at async POST (app\api\chat\route.ts:45:20)
+  43 |     });
+  44 |     
+> 45 |     const result = await model.generateContent(prompt);
+     |                    ^
+  46 |     const responseText = result.response.text();
+  47 |
+  48 |     return NextResponse.json(JSON.parse(responseText)); {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+ POST /api/chat 500 in 199ms (compile: 19ms, render: 180ms)
+ POST /api/chat 200 in 4.3s (compile: 16ms, render: 4.3s)
+ GET / 200 in 48ms (compile: 4ms, render: 45ms)
+ POST /api/generate 200 in 26.9s (compile: 30ms, render: 26.9s)
+ GET / 200 in 44ms (compile: 3ms, render: 40ms)
+ POST /api/generate 200 in 19.8s (compile: 2ms, render: 19.8s)
+ POST /api/chat 200 in 5.9s (compile: 2ms, render: 5.9s)
+✓ Compiled in 31ms
+✓ Compiled in 25ms
+ GET / 200 in 139ms (compile: 42ms, render: 97ms)
+ POST /api/generate 200 in 17.4s (compile: 2ms, render: 17.4s)
+✓ Compiled in 20ms
+✓ Compiled in 17ms
+✓ Compiled in 70ms
+✓ Compiled in 32ms
+ GET / 200 in 118ms (compile: 68ms, render: 50ms)
+✓ Compiled in 20ms
+ POST /api/generate 200 in 23.6s (compile: 24ms, render: 23.6s)
