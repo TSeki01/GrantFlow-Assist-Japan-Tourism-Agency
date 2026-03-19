@@ -187,6 +187,10 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <footer className="text-center text-sm text-gray-400 py-6 print:hidden">
+        © 2026 Tune Seki
+      </footer>
     </div>
   );
 }
