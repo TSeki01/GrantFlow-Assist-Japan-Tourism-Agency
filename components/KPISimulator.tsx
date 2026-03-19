@@ -22,9 +22,9 @@ export default function KPISimulator({ units }: { units: number }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={chartData} margin={{ top: 20, right: 30, left: 10, bottom: 5 }}>
+            <BarChart data={chartData} margin={{ top: 20, right: 30, left: 40, bottom: 5 }}>
               <XAxis dataKey="name" />
-              <YAxis label={{ value: '1組あたり待機時間(秒)', angle: -90, position: 'insideLeft', style: { fontSize: '12px', fill: '#4b5563' } }} />
+              <YAxis label={{ value: '1組あたり待機時間(秒)', angle: -90, position: 'insideLeft', offset: 10, style: { fontSize: '11px', fill: '#4b5563', textAnchor: 'middle' } }} />
               <Tooltip cursor={{ fill: '#f3f4f6' }} />
               <Legend />
               <Bar dataKey="待機時間" fill="#1a73e8" radius={[4, 4, 0, 0]} />
