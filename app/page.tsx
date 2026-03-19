@@ -184,7 +184,7 @@ export default function Home() {
 
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex-grow relative print:p-0 print:border-none print:shadow-none">
             <div className="flex justify-between items-center border-b pb-2 mb-4 print:hidden">
-              <h2 className="text-xl font-bold">様式第13 リアルタイムプレビュー</h2>
+              <h2 className="text-xl font-bold">受入環境整備高度化計画案リアルタイムプレビュー</h2>
               {draft && (
                 <button onClick={() => window.print()} className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm shadow transition-colors">
                   PDF出力 / 印刷
