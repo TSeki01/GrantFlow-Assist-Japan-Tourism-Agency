@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Form13Preview({ draft, formData }: { draft: any, formData: any }) {
   if (!draft) return (
-    <div className="flex items-center justify-center h-48 text-gray-400">
-      左側のフォームから生成を実行してください。
+    <div className="p-8 text-center text-gray-500 min-h-[500px] flex items-center justify-center bg-gray-50 border-2 border-dashed border-gray-200">
+      左側のフォームへ入力し、「受入環境整備高度化計画案をAIで作成する」を押してください。
     </div>
   );
 
